@@ -1,0 +1,73 @@
+<!-- Navbar -->
+<nav class="bg-white shadow">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <!-- Logo -->
+    <div class="text-2xl font-bold flex items-center space-x-2">
+      <span class="text-black">⚡ cyber</span>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="flex-grow mx-6">
+      <input
+        type="text"
+        placeholder="Search"
+        class="w-full max-w-md px-4 py-2 border rounded-lg focus:outline-none input-search-custom"
+      />
+    </div>
+
+    <!-- Menu Links -->
+    <div class="hidden md:flex space-x-6 text-gray-700 font-medium">
+      <a href="#" class="text-black font-bold">Home</a>
+      <a href="#" class="font-semibold text-gray-400">About</a>
+      <a href="#" class="font-semibold text-gray-400">Contact Us</a>
+      <a href="#" class="font-semibold text-gray-400">Blog</a>
+      <a href="#" class="font-semibold">
+        <span class="material-symbols-outlined text-2xl">favorite</span>
+      </a>
+      <a href="#">
+        <span class="material-symbols-outlined text-2xl"> shopping_cart </span>
+      </a>
+      <a href="#">
+        <span class="material-symbols-outlined text-2xl">person</span>
+      </a>
+    </div>
+
+    <!-- Icons -->
+    <div class="flex space-x-4 text-gray-700">
+      <button><i class="fas fa-heart text-xl"></i></button>
+      <button><i class="fas fa-shopping-cart text-xl"></i></button>
+      <button><i class="fas fa-user text-xl"></i></button>
+    </div>
+  </div>
+
+  <!-- Categories Menu -->
+  <div class="bg-gray-900 text-white py-3 gray">
+    <div class="container mx-auto flex justify-center space-x-6 text-sm">
+      <a href="#" class="flex items-center space-x-2 border-e-1 m-0 px-10"
+      (click)="comfirmBuyItem()"
+        ><span class="material-symbols-outlined"> phone_iphone </span>
+        <span>Phones</span></a
+      >
+      <a href="#" class="flex items-center space-x-2 border-e-1 m-0 px-10"
+        ><span class="material-symbols-outlined"> computer </span>
+        <span>Computers</span></a
+      >
+      <a href="#" class="flex items-center space-x-2 border-e-1 m-0 px-10"
+        ><span class="material-symbols-outlined"> videogame_asset </span>
+        <span>Smart Watches</span></a
+      >
+      <a href="#" class="flex items-center space-x-2 border-e-1 m-0 px-10"
+        ><span class="material-symbols-outlined"> photo_camera </span>
+        <span>Cameras</span></a
+      >
+      <a href="#" class="flex items-center space-x-2 border-e-1 m-0 px-10"
+        ><span class="material-symbols-outlined "> headphones </span>
+        <span>Headphones</span></a
+      >
+      <a href="#" class="flex items-center space-x-2 m-0 px-10"
+        ><span class="material-symbols-outlined"> videogame_asset </span>
+        <span>Gaming</span></a
+      >
+    </div>
+  </div>
+</nav>
