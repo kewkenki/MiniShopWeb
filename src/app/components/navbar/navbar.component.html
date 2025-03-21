@@ -1,13 +1,15 @@
 <!-- Navbar -->
 <nav class="bg-white shadow">
-  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+  <div class="container flex items-center justify-center py-4 px-6 mx-auto">
     <!-- Logo -->
     <div class="text-2xl font-bold flex items-center space-x-2">
-      <span class="text-black">⚡ cyber</span>
+      <span class="text-black">
+        <img src="assets/imgs/Logo.svg" alt="" />
+      </span>
     </div>
 
     <!-- Search Bar -->
-    <div class="flex-grow mx-6">
+    <div class="mx-6 w-100">
       <input
         type="text"
         placeholder="Search"
@@ -16,12 +18,12 @@
     </div>
 
     <!-- Menu Links -->
-    <div class="hidden md:flex space-x-6 text-gray-700 font-medium">
+    <div class="hidden md:flex space-x-10 text-gray-700 font-medium">
       <a href="#" class="text-black font-bold">Home</a>
-      <a href="#" class="font-semibold text-gray-400">About</a>
-      <a href="#" class="font-semibold text-gray-400">Contact Us</a>
-      <a href="#" class="font-semibold text-gray-400">Blog</a>
-      <a href="#" class="font-semibold">
+      <a href="#" class="text-gray-400">About</a>
+      <a href="#" class="text-gray-400">Contact Us</a>
+      <a href="#" class="text-gray-400">Blog</a>
+      <a href="#" class="">
         <span class="material-symbols-outlined text-2xl">favorite</span>
       </a>
       <a href="#">
@@ -41,16 +43,17 @@
   </div>
 
   <!-- Categories Menu -->
-  <div class="bg-gray-900 text-white py-3 gray">
-    <div class="container mx-auto flex justify-center space-x-6 text-sm">
-      <a href="#" class="flex items-center space-x-2 border-e-1 m-0 px-10"
-      (click)="comfirmBuyItem()"
-        ><span class="material-symbols-outlined"> phone_iphone </span>
+  <div class="bg-gray-900 text-white py-3">
+    <div
+      class="container mx-auto flex justify-center space-x-6 text-sm text-[#979797]"
+    >
+      <a href="#" class="flex items-center space-x-2 border-e-1 m-0 px-10">
+        <span class="material-symbols-outlined"> phone_iphone </span>
         <span>Phones</span></a
       >
       <a href="#" class="flex items-center space-x-2 border-e-1 m-0 px-10"
         ><span class="material-symbols-outlined"> computer </span>
-        <span>Computers</span></a
+        <span class="text-simibold">Computers</span></a
       >
       <a href="#" class="flex items-center space-x-2 border-e-1 m-0 px-10"
         ><span class="material-symbols-outlined"> videogame_asset </span>
@@ -61,7 +64,7 @@
         <span>Cameras</span></a
       >
       <a href="#" class="flex items-center space-x-2 border-e-1 m-0 px-10"
-        ><span class="material-symbols-outlined "> headphones </span>
+        ><span class="material-symbols-outlined"> headphones </span>
         <span>Headphones</span></a
       >
       <a href="#" class="flex items-center space-x-2 m-0 px-10"
