@@ -1,0 +1,19 @@
+.input-search-custom {
+    border: none;
+    outline: none;
+    background-color: #F5F5F5;
+    transition: 0.3s;
+}
+
+.input-search-custom:hover {
+    background-color: #E0E0E0;
+}
+
+.input-search-custom:focus {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.gray {
+   color: #979797;
+}
