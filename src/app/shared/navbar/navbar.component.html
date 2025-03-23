@@ -20,26 +20,46 @@
     <!-- Menu Links -->
     <div class="hidden md:flex space-x-10 text-gray-700 font-medium">
       <a href="#" class="text-black font-bold">Home</a>
-      <a href="#" class="text-gray-400">About</a>
-      <a href="#" class="text-gray-400">Contact Us</a>
-      <a href="#" class="text-gray-400">Blog</a>
+      <a href="#" class="font-extralight text-gray-400">About</a>
+      <a href="#" class="font-extralight text-gray-400">Contact Us</a>
+      <a href="#" class="font-extralight text-gray-400">Blog</a>
       <a href="#" class="">
         <span class="material-symbols-outlined text-2xl">favorite</span>
       </a>
       <a href="#">
         <span class="material-symbols-outlined text-2xl"> shopping_cart </span>
       </a>
-      <a href="#">
+      <a href="#" class="relative group">
         <span class="material-symbols-outlined text-2xl">person</span>
+        <!-- Dropdown Menu -->
+        <div
+          class="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg opacity-0 group-hover:opacity-100 group-hover:block transition-opacity"
+        >
+          <a
+            href="#"
+            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:border-transparent"
+            >Profile</a
+          >
+          <a
+            href="#"
+            class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:border-transparent"
+            >Settings</a
+          >
+          <a
+            (click)="logout()"
+            class="cursor-pointer block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:border-transparent"
+            >Logout</a
+          >
+        </div>
       </a>
     </div>
 
     <!-- Icons -->
-    <div class="flex space-x-4 text-gray-700">
+    <!-- <div class="flex space-x-4 text-gray-700">
       <button><i class="fas fa-heart text-xl"></i></button>
       <button><i class="fas fa-shopping-cart text-xl"></i></button>
       <button><i class="fas fa-user text-xl"></i></button>
-    </div>
+    </div> -->
   </div>
 
   <!-- Categories Menu -->

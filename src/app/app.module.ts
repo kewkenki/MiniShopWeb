@@ -7,10 +7,17 @@ import { SharedModule } from './shared/shared.module';
 import { RouterOutlet } from '@angular/router';
 import { LayoutModule } from './layout/layout.module';
 import { HttpClientModule } from '@angular/common/http';
+import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './features/user/login/login.component';
+import { RegisterComponent } from './features/user/register/register.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
+    RegisterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     SharedModule,
     RouterOutlet,
     LayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

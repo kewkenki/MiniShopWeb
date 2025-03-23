@@ -6,7 +6,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
     declarations: [
-        LoginComponent,
         FooterComponent,
         NavbarComponent,
     ],
