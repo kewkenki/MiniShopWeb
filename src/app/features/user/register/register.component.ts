@@ -41,6 +41,8 @@ export class RegisterComponent implements OnInit {
           text: 'User registered successfully',
         })
 
+        this.goToLogin();
+
 
       }else {
         Swal.fire({
